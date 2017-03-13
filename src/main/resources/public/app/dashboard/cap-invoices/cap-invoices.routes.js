@@ -1,0 +1,10 @@
+"use strict";
+var index_1 = require('./index');
+exports.CapInvoicesRoutes = [
+    {
+        path: 'capinvoices',
+        component: index_1.CapInvoicesComponent
+    }
+];
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9kYXNoYm9hcmQvY2FwLWludm9pY2VzL2NhcC1pbnZvaWNlcy5yb3V0ZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBLHNCQUFxQyxTQUFTLENBQUMsQ0FBQTtBQUVsQyx5QkFBaUIsR0FBWTtJQUN0QztRQUNJLElBQUksRUFBRSxhQUFhO1FBQ25CLFNBQVMsRUFBRSw0QkFBb0I7S0FDbEM7Q0FDSixDQUFDIiwiZmlsZSI6ImFwcC9kYXNoYm9hcmQvY2FwLWludm9pY2VzL2NhcC1pbnZvaWNlcy5yb3V0ZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSb3V0ZSB9IGZyb20gJ0Bhbmd1bGFyL3JvdXRlcic7XHJcbmltcG9ydCB7IENhcEludm9pY2VzQ29tcG9uZW50IH0gZnJvbSAnLi9pbmRleCc7XHJcblxyXG5leHBvcnQgY29uc3QgQ2FwSW52b2ljZXNSb3V0ZXM6IFJvdXRlW10gPSBbXHJcbiAgICB7XHJcbiAgICAgICAgcGF0aDogJ2NhcGludm9pY2VzJyxcclxuICAgICAgICBjb21wb25lbnQ6IENhcEludm9pY2VzQ29tcG9uZW50XHJcbiAgICB9XHJcbl07XHJcbiJdfQ==
