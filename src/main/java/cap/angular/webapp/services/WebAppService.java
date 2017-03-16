@@ -1,13 +1,18 @@
-package cap.angular.webapp;
+package cap.angular.webapp.services;
 
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Service;
 
-@RestController
-public class WebAppController {
-    
-    @RequestMapping("/api/capInvoices")
-    public String capInvoices() {
+@Service("webAppService")
+public class WebAppService {
+
+    private int reps;
+
+    public WebAppService() {
+
+    }
+
+    public String getJsonData() {
+        reps++;
         return jsonData;
     }
 

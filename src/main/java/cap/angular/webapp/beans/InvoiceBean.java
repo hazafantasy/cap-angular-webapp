@@ -1,4 +1,4 @@
-package cap.angular.webapp;
+package cap.angular.webapp.beans;
 
 public class InvoiceBean {
     private String id;
