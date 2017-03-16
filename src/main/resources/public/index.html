@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://npmcdn.com/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://npmcdn.com/bootstrap/dist/css/bootstrap-theme.min.css">
     <!-- inject:css -->
-    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.css?1489432083663">
-    <link rel="stylesheet" href="/assets/sass/app.css?1489432083667">
+    <link rel="stylesheet" href="/css/main.css?1489708043849">
     <!-- endinject -->
 </head>
 <body>
@@ -30,32 +29,18 @@
     </script>
 
     <!-- shims:js -->
-    <script src="/node_modules/core-js/client/shim.min.js?1489432083631"></script>
-    <script src="/node_modules/systemjs/dist/system.src.js?1489432083636"></script>
     <!-- endinject -->
 
-    
-    <script src="/app/system-config.js"></script>
     
 
     <!-- libs:js -->
-    <script src="/node_modules/zone.js/dist/zone.js?1489432083645"></script>
-    <script src="/node_modules/rxjs/bundles/Rx.min.js?1489432083650"></script>
-    <script src="/node_modules/jquery/dist/jquery.min.js?1489432083653"></script>
-    <script src="/node_modules/highcharts/highcharts.js?1489432083657"></script>
     <!-- endinject -->
 
     <!-- inject:js -->
+    <script src="/js/shims.js?1489708043845"></script>
+    <script src="/js/app.js?1489708043846"></script>
     <!-- endinject -->
 
-    
-    <script>
-        System.import('app/main')
-        .catch(function (e) {
-            console.error(e,
-                'Report this error at https://github.com/mgechev/angular2-seed/issues');
-        });
-    </script>
     
 
 </body>

@@ -17,18 +17,18 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th style="width: 10%"></th>
-                    <th style="width: 20%">Date</th>
-                    <th style="width: 40%">Order#</th>
-                    <th style="width: 10%">User Name</th>
-                    <th style="width: 20%">Total</th>
+                    <th style="width: 10%">Date</th>
+                    <th style="width: 20%">Order#</th>
+                    <th style="width: 40%">User Name</th>
+                    <th style="width: 10%">Total</th>
+                    <th style="width: 20%"></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr *ngFor="let item of data">
-                    <td>{{item.order_date}}</td>
-                    <td>{{item.id}}</td>
-                    <td class="text-right">{{item.user_name}}</td>
+                    <td>{{item.orderDate}}</td>
+                    <td>{{item.orderNumber}}</td>
+                    <td class="text-right">{{item.customerName}}</td>
                     <td>{{item.total}}</td>
                     <td>
                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

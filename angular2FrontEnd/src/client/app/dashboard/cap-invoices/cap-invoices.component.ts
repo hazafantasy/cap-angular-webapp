@@ -18,12 +18,15 @@ export class CapInvoicesComponent {
     }
 
     ngOnInit(): void {
-        this.http.get("app/dashboard/cap-invoices/data.json")
-            .subscribe((data)=> {
+
+        window.setInterval(function(){
+            this.http.get("api/capInvoices")
+                .subscribe((data: any)=> {
                 setTimeout(()=> {
                     this.data = data.json();
                 }, 1000);
             });
+        }, 1000);
     }
 
     public toInt(num: string) {

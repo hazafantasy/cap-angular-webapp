@@ -24,7 +24,7 @@ If you want to publish the changes and pack them along the spring boot
 .jar you need to build with npm and then copy the files to the public
 directory of spring boot
     
-    npm run build.prod.exp
+    npm run build.prod
     cp -rf ./dist/prod/* ../src/main/resources/public/
     
    

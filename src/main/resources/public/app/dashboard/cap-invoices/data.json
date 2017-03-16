@@ -34,11 +34,5 @@
         "order_date": "26/04/2017",
         "user_name": "Jill Valentine",
         "total": "$000.00"
-    },
-    {
-        "id": "6666",
-        "order_date": "4Ever",
-        "user_name": "Nemesis",
-        "total": "$010.10"
     }
 ]

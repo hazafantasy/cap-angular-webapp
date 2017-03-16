@@ -1,40 +1,45 @@
 package cap.angular.webapp.beans;
 
 public class InvoiceBean {
-    private String id;
-    private String order_date;
-    private String user_name;
+    private String orderNumber;
+    private String orderDate;
+    private String customerName;
     private String total;
 
-    public InvoiceBean(String id, String order_date, String user_name, String total) {
-        this.id = id;
-        this.order_date = order_date;
-        this.user_name = user_name;
-        this.total = total;
+    public InvoiceBean() {
+
     }
 
-    public String getId() {
-        return id;
+    public InvoiceBean(String orderNumber, String orderDate, String customerName, String total) {
+        this.setOrderNumber(orderNumber);
+        this.setOrderDate(orderDate);
+        this.setCustomerName(customerName);
+        this.setTotal(total);
     }
 
-    public void setId(String id) {
-        this.id = id;
+
+    public String getOrderNumber() {
+        return orderNumber;
     }
 
-    public String getOrder_date() {
-        return order_date;
+    public void setOrderNumber(String orderNumber) {
+        this.orderNumber = orderNumber;
     }
 
-    public void setOrder_date(String order_date) {
-        this.order_date = order_date;
+    public String getOrderDate() {
+        return orderDate;
     }
 
-    public String getUser_name() {
-        return user_name;
+    public void setOrderDate(String orderDate) {
+        this.orderDate = orderDate;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public String getTotal() {
