@@ -1,40 +1,29 @@
-import { Component } from '@angular/core';
-import { Http } from "@angular/http";
+import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
     moduleId: module.id,
     selector: 'cap-invoices',
     templateUrl: './cap-invoices.component.html'
 })
-export class CapInvoicesComponent {
+export class CapInvoicesComponent implements OnInit {
     public data: any;
-    public filterQuery = "";
-    public rowsOnPage = 10;
-    public sortBy = "email";
-    public sortOrder = "asc";
-    
-    constructor(private http:Http){
+    //public dataURL = 'app/dashboard/cap-invoices/data.json';
+    public dataURL = 'api/capInvoices';
+    constructor(private http:Http) {
 
     }
 
     ngOnInit(): void {
-
-        window.setInterval(function(){
-            this.http.get("api/capInvoices")
-                .subscribe((data: any)=> {
-                setTimeout(()=> {
-                    this.data = data.json();
-                }, 1000);
-            });
-        }, 1000);
+        //Refresh each 5 seconds
+        window.setInterval(this.getInvoices, 5000, this);
     }
 
-    public toInt(num: string) {
-        return +num;
+    private getInvoices(parentClass:CapInvoicesComponent) {
+        parentClass.http.get(parentClass.dataURL)
+            .subscribe((data: any)=> {
+            setTimeout(()=> {//Wait 1 second before update the data
+                parentClass.data = data.json();
+            }, 1000);});
     }
-
-    public sortByWordLength = (a: any) => {
-        return a.city.length;
-    }
-
 }
